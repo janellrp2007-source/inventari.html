@@ -28,19 +28,19 @@
         /*color de texto*/
         --bs-btn-bg: var(--sena-verde);
         /*color de borde*/
-        --bs-btn-border-color:var(var(--sena_verde));
+        --bs-btn-border-color:(var(--sena_verde));
         /*texto con el mouse arriba*/
         --bs-btn-hover-color: #fff;
         /*fondo con el mouse encima*/
-        --bs-btn-hover-bg: var(var(--sena-verde-oscuro));
+        --bs-btn-hover-bg: (var(--sena-verde-oscuro));
         /*borde con el mouse encima*/
-        --bs--btn--border-color: var(var(--sena-verde-oscuro));
+        --bs--btn--border-color: (var(--sena-verde-oscuro));
         /*texto mientras se hace clic*/
         --bs--btn--active-color: #fff;
         /*fondo mientras se hace clic*/
-        --bs-btn-active-bg: var(var(--sena_verde-oscuro));
+        --bs-btn-active-bg: (var(--sena_verde-oscuro));
         /*borde mientras se hace clic*/
-        --bs-btn-active-border-color: var(var(--sena_verde-oscuro));
+        --bs-btn-active-border-color: (var(--sena_verde-oscuro));
         /*cierra la regla*/
     }
     /* la coma aplica la misma regla a varios selectores: los campos con el foco*/
