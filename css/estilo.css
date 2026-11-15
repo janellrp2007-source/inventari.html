@@ -26,6 +26,8 @@
     /*se usa junto a btn:class="btn btn-sena"*/
     .btn-sena {
         /*color de texto*/
+        --bs-btn-color: #fff; 
+        /*color fondo*/
         --bs-btn-bg: var(--sena-verde);
         /*color de borde*/
         --bs-btn-border-color:(var(--sena_verde));
@@ -34,7 +36,7 @@
         /*fondo con el mouse encima*/
         --bs-btn-hover-bg: (var(--sena-verde-oscuro));
         /*borde con el mouse encima*/
-        --bs--btn--border-color: (var(--sena-verde-oscuro));
+        --bs--btn-hover-border-color: (var(--sena-verde-oscuro));
         /*texto mientras se hace clic*/
         --bs--btn--active-color: #fff;
         /*fondo mientras se hace clic*/
@@ -52,7 +54,7 @@
         /*borde verde en lugar de azul de bootstrap*/
         border-color: var(--sena-verde);
         /* halo verde traslucido al rededor del campo*/
-        box-shadow: 0 0 0. 25rem rgba(57, 169, 0, .25);
+        box-shadow: 0 0 0 0. 25rem rgba(57, 169, 0, 0.25);
         /*cierre de la regla*/
     }
 
@@ -88,7 +90,7 @@
         /*ancho completo*/
         width: 100%;
         /*hasta 420px*/
-        max-width: 420;
+        max-width: 420px;
         /*fondo blanco*/
         background-color: #fff;
         /*esquinas redondeadas*/
@@ -98,11 +100,11 @@
         /*el ancho incluye el reyeno*/
         box-sizing: border-box;
         /*sombra*/
-        box-shadow: 0 1rem 3 rem rgba(0, 0, .25)
+        box-shadow: 0 1rem 3 rem rgba(0, 0, 0, 0.25);
         /*cierre regla*/
     }
     /* dos clases pegadas (sin espacio) = elemntos que tienen ambas clases las usara el registro que tiene mas campos*/
-    .login-card {
+    .login-card.ancha {
         /*tarjeta mas ancha*/
         max-width: 680px;
         /*cierre la regla*/
@@ -120,7 +122,7 @@
         /*azul sena*/
         color: var(--sena-azul);
         /*margen pequeño*/
-        margin: .25rem 0;
+        margin: 0.25rem 0;
         /*cierre de la regla*/
     }
     /* textosnpequeños de abajo*/
@@ -128,7 +130,7 @@
         /*centrados*/
         text-align: center;
         /*letra pequeña*/
-        font-size: .875rem;
+        font-size: 0.875rem;
         /*gris*/
         color: #6c757d;
         /*margen superior*/
@@ -147,11 +149,11 @@
     /*enlaces del menu lateral*/
     .siderbar .nav-link {
         /* blanco al 75% en los enlaces no activos se ven un poco mas apagados*/
-        color: rgba(255, 255, 255, .75);
+        color: rgba(255, 255, 255, 0.75);
         /*esquinas redondeadas*/
-        border-radius: 5rem;
+        border-radius: 0.5rem;
         /* separacion entre enlaces*/
-        margin-bottom: .25rem;
+        margin-bottom: 0.25rem;
         /*cierre de la regla*/
     }
     /* enlace con el mause encima*/
@@ -159,7 +161,7 @@
         /*texto blanco*/
         color: #fff;
         /*texto blanco al 10%un resalte sutil*/
-        background-color: rgba(255, 255, 255, .1);
+        background-color: rgba(255, 255, 255, 0.1);
         /*cierre de la regla*/
     }
     /* enlace de la pagina actual (tiene las dos clases: nav-link y active*/
@@ -167,14 +169,14 @@
         /*texto blanco*/
         color:#fff;
         /*fondo verde sena el usuario sabe en que modulo esta*/
-        background-color: var(--sena verde);
+        background-color: var(--sena-verde);
         /*cierre de la regla*/
     }
     /* las reglas siguientes solo aplican en pantallas de 992 px o mas el brekcpoint de bootstrap*/
     @media (min-width:992px) {
         /* menu lateral del computador*/
         .siderbar{
-            /* queda no se mueve al desplazar la pagina*/
+            /* queda fijo no se mueve al desplazar la pagina*/
             position: fixed;
             /*pegado arriba*/
             top:0;
@@ -208,7 +210,7 @@
         /*exepto una franja verde a la izquierda*/
         border-left: 4px solid var(var(--sena-verde));
         /* anima el movimiento y la sombra en 0.2 segundos*/
-        transition: transform .25, boxshadow  .2s;
+        transition: transform .2s, box-shadow  .2s;
 
     }
     /*tarjeta con el mause encima*/
@@ -217,7 +219,7 @@
         /*la sube 4px efecto de levantarse*/
         transform: translateY(-4px);
         /*sombra mas marcada (!importad para ganarle el shadow-sm*/
-        box-shadow: 0 .5rem rgba(0, 0, 0, .12) !important;
+        box-shadow: 0 ,5rem rgba(0, 0, 0, .12) !important;
     }
     /* cuadro del color que contiene el icono de la tarjeta*/
     .icono.kpi {
@@ -242,7 +244,7 @@
         justify-content: center;
         /*letras semi negritas*/
         font-weight: 600;
-        font-size: 85rem;
+        font-size: .85rem;
         /*evita que el circulo se aplaste falta de espacio*/
         flex-shrink: 0;
     }
@@ -285,4 +287,6 @@
     .list-group {
         /*fonde item activo*/
         --bs-list-group_active_bg: var(var(--sena-verde));
+        /*borde de item activo*/
+        --bs-list-group-active-border-color:var(var(--sena-verde));
     }
