@@ -13,7 +13,7 @@
     /*variables generales estilos generales que aplican a todas las paginas*/
     body {/*afecta a todo el cuerpo de la pagina*/
         margin:0;/*quita la margen que el navegador coloca el navegador por defecto*/
-        font-family: "segeo UI", Roboto, arial, sans-serif;/*tipos de letra si no existe pasa a la siguiente*/
+        font-family: "segoe UI", Roboto, arial, sans-serif;/*tipos de letra si no existe pasa a la siguiente*/
 
     }
     /* texto verde sena */
@@ -100,7 +100,7 @@
         /*el ancho incluye el reyeno*/
         box-sizing: border-box;
         /*sombra*/
-        box-shadow: 0 1rem 3 rem rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25);
         /*cierre regla*/
     }
     /* dos clases pegadas (sin espacio) = elemntos que tienen ambas clases las usara el registro que tiene mas campos*/
@@ -238,13 +238,13 @@
         width: 38px;
         height: 38px;
         border-radius: 50%;
-        /*flexbox en linea para center*/
-        display: inline-flex;
+        /*flexbox para centar la imagen*/
+        display: flex;
         align-items: center;
         justify-content: center;
         /*letras semi negritas*/
         font-weight: 600;
-        font-size: .85rem;
+        font-size: 0.85rem;
         /*evita que el circulo se aplaste falta de espacio*/
         flex-shrink: 0;
     }
@@ -253,9 +253,9 @@
     /*color de los numeros*/
     --bs-pagination-color: var(--sena-azul);
     /*fondo de pagina activa*/
-    --bs-pagination-active-bg: var(var(--sena verde));
+    --bs-pagination-active-bg: var(--sena verde);
     /*borde de pagina activa*/
-    --bs-pagination-active-border-color: var(var(--sena-verde));
+    --bs-pagination-active-border-color: var(--sena-verde);
     }
     /*tarjeta punteada que invita a crer una categoria nueva*/
     .tarjeta-agregar {
@@ -264,7 +264,7 @@
         color: #6c757d;
         min-height: 200px;
         /*anima los cambios de color*/
-        transition: border-color .2s, color .2s; 
+        transition: border-color .2s, background-color .2s, color .2s; 
     }
     /* al pasar el mause*/
     .tarjeta-agregar:hover {
@@ -274,7 +274,6 @@
     /*cuadro donde ira la foto del color*/
     .miniatura {
         width: 48px;
-        height: 48px;
         display: flex;
         align-items: center;
         border-radius: 5rem;
@@ -286,7 +285,7 @@
     /*lista de categorias*/
     .list-group {
         /*fonde item activo*/
-        --bs-list-group_active_bg: var(var(--sena-verde));
+        --bs-list-group-active-bg: var(--sena-verde);
         /*borde de item activo*/
-        --bs-list-group-active-border-color:var(var(--sena-verde));
+        --bs-list-group-active-border-color: var(--sena-verde);
     }
