@@ -30,19 +30,19 @@
         /*color fondo*/
         --bs-btn-bg: var(--sena-verde);
         /*color de borde*/
-        --bs-btn-border-color:(var(--sena_verde));
+        --bs-btn-border-color:var(--sena_verde);
         /*texto con el mouse arriba*/
         --bs-btn-hover-color: #fff;
         /*fondo con el mouse encima*/
-        --bs-btn-hover-bg: (var(--sena-verde-oscuro));
+        --bs-btn-hover-bg: var(--sena-verde-oscuro);
         /*borde con el mouse encima*/
-        --bs--btn-hover-border-color: (var(--sena-verde-oscuro));
+        --bs--btn-hover-border-color: var(--sena-verde-oscuro);
         /*texto mientras se hace clic*/
         --bs--btn--active-color: #fff;
         /*fondo mientras se hace clic*/
-        --bs-btn-active-bg: (var(--sena_verde-oscuro));
+        --bs-btn-active-bg: var(--sena_verde-oscuro);
         /*borde mientras se hace clic*/
-        --bs-btn-active-border-color: (var(--sena_verde-oscuro));
+        --bs-btn-active-border-color: var(--sena_verde-oscuro);
         /*cierra la regla*/
     }
     /* la coma aplica la misma regla a varios selectores: los campos con el foco*/
@@ -54,7 +54,7 @@
         /*borde verde en lugar de azul de bootstrap*/
         border-color: var(--sena-verde);
         /* halo verde traslucido al rededor del campo*/
-        box-shadow: 0 0 0 0. 25rem rgba(57, 169, 0, 0.25);
+        box-shadow: 0 0 0 0.25rem rgba(57, 169, 0, 0.25);
         /*cierre de la regla*/
     }
 
@@ -208,7 +208,7 @@
         /*sin borde general*/
         border: 0;
         /*exepto una franja verde a la izquierda*/
-        border-left: 4px solid var(var(--sena-verde));
+        border-left: 4px solid var(--sena-verde);
         /* anima el movimiento y la sombra en 0.2 segundos*/
         transition: transform .2s, box-shadow  .2s;
 
@@ -222,7 +222,7 @@
         box-shadow: 0 ,5rem rgba(0, 0, 0, .12) !important;
     }
     /* cuadro del color que contiene el icono de la tarjeta*/
-    .icono.kpi {
+    .icono-kpi {
         width: 52px;
         height: 52px;
         /*flexbox para centrar el icono*/
@@ -238,7 +238,7 @@
         width: 38px;
         height: 38px;
         border-radius: 50%;
-        /*flexbox para centar la imagen*/
+        /*flexbox en linea para center*/
         display: flex;
         align-items: center;
         justify-content: center;
@@ -253,7 +253,7 @@
     /*color de los numeros*/
     --bs-pagination-color: var(--sena-azul);
     /*fondo de pagina activa*/
-    --bs-pagination-active-bg: var(--sena verde);
+    --bs-pagination-active-bg: var(--sena-verde);
     /*borde de pagina activa*/
     --bs-pagination-active-border-color: var(--sena-verde);
     }
@@ -264,7 +264,7 @@
         color: #6c757d;
         min-height: 200px;
         /*anima los cambios de color*/
-        transition: border-color .2s, background-color .2s, color .2s; 
+        transition: border-color .2s,background-color .2s, color .2s; 
     }
     /* al pasar el mause*/
     .tarjeta-agregar:hover {
@@ -285,7 +285,7 @@
     /*lista de categorias*/
     .list-group {
         /*fonde item activo*/
-        --bs-list-group-active-bg: var(--sena-verde);
+        --bs-list-group_active_bg: var(--sena-verde);
         /*borde de item activo*/
-        --bs-list-group-active-border-color: var(--sena-verde);
+        --bs-list-group-active-border-color:var(--sena-verde);
     }
